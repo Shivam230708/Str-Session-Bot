@@ -1,49 +1,50 @@
-import config
-import time
 import logging
+import time
 from pyrogram import Client, idle
-from pyromod import listen  
 from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid
+import config
 
-# Configure logging
 logging.basicConfig(
-    level=logging.INFO, 
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
 )
-
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
 logging.getLogger("pymongo").setLevel(logging.ERROR)
 
-# Initialize start time
 StartTime = time.time()
 
-# Initialize the Client
-app = Client(
-    "JARVIS",
-    api_id=config.API_ID,
-    api_hash=config.API_HASH,
-    bot_token=config.BOT_TOKEN,
-    in_memory=True,
-    plugins=dict(root="SESSIONGEN"),
-)
+def main():
+    print("🔧 ꜱᴛᴀʀᴛɪɴɢ ᴊᴀʀᴠɪꜱ ꜱᴇꜱꜱɪᴏɴ ɢᴇɴ...")
 
-if __name__ == "__main__":
-    print("𝙹𝚊𝚛𝚟𝚒𝚜 𝚂𝚎𝚜𝚜𝚒𝚘𝚗 𝙶𝚎𝚗 𝚜𝚝𝚊𝚛𝚝𝚒𝚗𝚐...")
+    app = Client(
+        name="String-Bot",
+        api_id=config.API_ID,
+        api_hash=config.API_HASH,
+        bot_token=config.BOT_TOKEN,
+        in_memory=True,
+        plugins=dict(root="StringGen"),
+    )
+
     try:
         app.start()
-    except ApiIdInvalid:
-        raise Exception("Your API_ID is not valid.")
-    except ApiIdPublishedFlood:
-        raise Exception("Your API_ID/API_HASH is flood banned.")
-    except AccessTokenInvalid:
-        raise Exception("Your BOT_TOKEN is not valid.")
-    except Exception as e:
-        logging.error(f"An unexpected error occurred: {e}")
-        raise
+        uname = app.get_me().username
+        print(f"✅ ʙᴏᴛ @{uname} ɪꜱ ɴᴏᴡ ʀᴇᴀᴅʏ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ꜱᴇꜱꜱɪᴏɴꜱ.")
+        idle()
 
-    uname = app.get_me().username
-    print(f"@{uname} NOW JARVIS SESSION GEN IS READY TO GEN SESSION")
-    
-    idle()
-    
-    app.stop()
-    print("🇸 🇪 🇸 🇸 🇮 🇴 🇳  🇬 🇪 🇳 🇷 🇦 🇹 🇮 🇳 🇬  🇸 🇹 🇴 🇵 🇵 🇪 🇩...")
+    except ApiIdInvalid:
+        logging.critical("❌ ɪɴᴠᴀʟɪᴅ ᴀᴘɪ_ɪᴅ ᴏʀ ᴀᴘɪ_ʜᴀꜱʜ. ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏɴꜰɪɢ.")
+    except ApiIdPublishedFlood:
+        logging.critical("🚫 ᴀᴘɪ_ɪᴅ/ʜᴀꜱʜ ᴄᴏᴍʙɪɴᴀᴛɪᴏɴ ɪꜱ ꜰʟᴏᴏᴅ-ʙᴀɴɴᴇᴅ.")
+    except AccessTokenInvalid:
+        logging.critical("🔐 ɪɴᴠᴀʟɪᴅ ʙᴏᴛ_ᴛᴏᴋᴇɴ. ᴘʟᴇᴀꜱᴇ ᴜᴘᴅᴀᴛᴇ ɪᴛ.")
+    except Exception as e:
+        logging.exception(f"❗ ᴜɴᴇxᴘᴇᴄᴛᴇᴅ ᴇʀʀᴏʀ ᴅᴜʀɪɴɢ ꜱᴛᴀʀᴛᴜᴘ: {e}")
+    finally:
+        try:
+            app.stop()
+            print("🛑 ꜱᴇꜱꜱɪᴏɴ ɢᴇɴᴇʀᴀᴛɪᴏɴ ꜱᴛᴏᴘᴘᴇᴅ.")
+        except Exception as e:
+            logging.error(f"ᴇʀʀᴏʀ ᴅᴜʀɪɴɢ ꜱʜᴜᴛᴅᴏᴡɴ: {e}")
+
+if __name__ == "__main__":
+    main()

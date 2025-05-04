@@ -1,49 +1,40 @@
 {
-  "name": "Jarvis String Gen Bot",
-  "description": "A Telegram Bot to generate Telethon and Pyrogram String Session.",
-  "logo": "https://telegra.ph/file/83db3b7786ffa9948962b.jpg",
+  "name": "SessionBuilderBot",
+  "description": "A modern Telegram bot to generate secure Pyrogram & Telethon user/bot session strings with ease.",
+  "logo": "https://files.catbox.moe/fvw6fs.jpg",
+  "repository": "https://github.com/CertifiedCoders/STRING-GENRATOR",
   "keywords": [
-    "telegram",
-    "bot",
-    "python",
+    "telegram-bot",
     "pyrogram",
-    "telethon"
+    "telethon",
+    "session-generator",
+    "docker-ready"
   ],
   "env": {
     "API_ID": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": "",
+      "description": "Get your API ID from https://my.telegram.org",
       "required": true
     },
     "API_HASH": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": "",
+      "description": "Get your API HASH from https://my.telegram.org",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "A Bot's token from Botfather",
-      "value": "",
+      "description": "Bot token from @BotFather",
       "required": true
     },
     "OWNER_ID": {
-      "description": "Fill your user id here. (Must be integer)",
-      "value": "",
+      "description": "Your Telegram numeric user ID (admin only)",
       "required": true
     },
-    "MONGO_URL": {
-      "description": "Get this value from cloud.mongodb.com",
-      "value": "",
-      "required": true
-    },
-    "MUST_JOIN": {
-      "description": "",
-      "value": "",
-      "required": true
+    "MONGO_URI": {
+      "description": "MongoDB connection URI (used for user stats, broadcast, etc)",
+      "required": false
     }
   },
-  "addons": [
+  "buildpacks": [
     {
-      "plan": "heroku-postgresql"
+      "url": "heroku/python"
     }
   ]
 }

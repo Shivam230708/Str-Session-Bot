@@ -1,82 +1,160 @@
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<h3><img  style="align-item" :"center" src="https://telegra.ph/file/fbd55ee956abef2a74e15.jpg" width="80px" height="70%"><img src="https://readme-typing-svg.herokuapp.com?color=00BFFF&width=620&lines=✨+🦋+𝐇𝐄𝐘+𝐓𝐇𝐄𝐑𝐄+𝐓𝐇𝐈𝐒+𝐈𝐒+𝐕𝐈𝐏+𝐑𝐀𝐉𝐍𝐈𝐒𝐇+𝐗𝐃+🖤+🥀"></b></h3>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<!-- ✨ Animated Header (Top) -->
+
 <p align="center">
-    <b>ᴠɪsɪᴛᴏʀs</b><br>
- -->    <img align="middle" src="https://profile-counter.glitch.me/doraemon890/count.svg" />
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 </p>
-<h1 align ="center"><img src="https://readme-typing-svg.herokuapp.com?color=00BFFF&width=350&lines=sᴛʀɪɴɢ+ɢᴇɴʀᴀᴛᴏʀ+ʙᴏᴛ"></b></h1>
 
-<p align="center"><a href="https://t.me/JARVIS_V2"><img src="https://telegra.ph/file/20d1bcedcf901bed9bf65.jpg" width="600"></a></p>
+<!-- 👤 Avatar + Typing Banner -->
 
-# 𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐌𝐄𝐍𝐓✨🦋
-<details>
-<summary><b>ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ</b></summary>
-<br>
-<p align="center"><a href="http://dashboard.heroku.com/new?template=https://github.com/doraemon890/STRING-GENRATOR"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-pink?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-</details>
-<h3 align="center">
-    ─「 ⇝ ɪɴsᴛᴀʟʟ ʟᴏᴄᴀʟʟʏ ᴏʀ ᴏɴ ᴀ ᴠᴘs ⇜ 」─
-</h3>
+<div align="center">
+  <table>
+    <tr>
+      <td width="100px" align="center">
+        <img src="https://files.catbox.moe/r2ga8f.jpg" width="90px" style="border-radius: 50%;" />
+      </td>
+      <td>
+        <img src="https://readme-typing-svg.herokuapp.com?color=00BFFF&width=600&lines=Hey+There,+This+is+Certified+Coder+%F0%9F%A5%80" />
+      </td>
+    </tr>
+  </table>
+</div>
 
-<details>
-<summary><h3>
-<b> ᴠᴘs/ʟᴏᴄᴀʟ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅ </b>
-</h3></summary>
-    
-`sudo apt update && sudo apt install git curl python3-pip ffmpeg -y`
+<!-- 👁 Visitor Counter -->
 
-`curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=CertifiedCoders&style=flat-square" />
+</p>
 
-`source ~/.bashrc`
+<!-- 🖼 Promo Image -->
 
-`nvm install node`
+<p align="center">
+  <img src="https://files.catbox.moe/fvw6fs.jpg" width="600" />
+</p>
 
-`sudo apt-get update && sudo apt-get upgrade -y`
+<!-- 📌 Try the Bot -->
 
-`sudo apt-get install python3-pip ffmpeg -y`
+<p align="center">
+  <a href="https://t.me/SessionBuilderBot"><img src="https://img.shields.io/badge/Try%20Bot-@SessionBuilderBot-blue?style=for-the-badge&logo=telegram" /></a>
+</p>
 
-`sudo apt-get install python3-pip -y`
+---
 
-`sudo pip3 install -U pip`
+# 🤖 SessionBuilderBot
 
-`curl -fssL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm`
+A powerful, secure and modern Telegram bot that generates **Pyrogram** and **Telethon** session strings — for user or bot accounts — using an intuitive step-by-step UI.
 
-`git clone https://github.com/doraemon890/STRING-GENRATOR`
+---
 
-`cd STRING-GENRATOR`
+## 🛠 Features
 
-`pip3 install -U -r requirements.txt`
+✔ Generate session strings for:
 
-`sudo apt install tmux && tmux`
+* `Pyrogram v1` (User)
+* `Pyrogram v2` (User & Bot)
+* `Telethon` (User & Bot)
 
-`apt install nano`
+✨ Plus:
 
-`sudo bash setup`
+* Inline keyboard-driven UI
+* Handles timeout, cancel, restart commands
+* Logs never expose sensitive content
+* Fully Dockerized & deploy-ready for **Railway**, **Heroku**, and **VPS**
 
-`(fill your all variable)`
+---
 
+## 📊 Admin Utilities
 
-` python3 main.py`
+If you're the owner (via `OWNER_ID`), you get:
 
+* `/stats` – Show total registered users
+* `/broadcast [message]` – Send global message
+* `/users` – List users with join timestamps (as `.txt` if > 50)
 
-`Unclone repo `
+---
 
-`rm -rf STRING-GENRATOR`
+## 🚀 Deployment
 
-`tmux kill-session -t 0`
+<p align="center">
+  <a href="https://railway.app/template/-jVtHa?referralCode=certified"><img src="https://img.shields.io/badge/Deploy--To--Railway-black?style=for-the-badge&logo=railway"/></a>
+  <a href="https://heroku.com/deploy?template=https://github.com/CertifiedCoders/STRING-GENRATOR"><img src="https://img.shields.io/badge/Deploy--To--Heroku-6762A6?style=for-the-badge&logo=heroku"/></a>
+</p>
 
-</details>
+---
 
-# 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 💗🥀
-<a href="https://t.me/JARVIS_V2"><img title="Telegram" src="https://img.shields.io/badge/JARVIS-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=hackerdoraemon2@gmail.com"><img title="GMAIL" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-<a href="https://youtube.com/@rajnisha3"><img title="Youtube" src="https://img.shields.io/badge/youtube-%230077B5.svg?&style=for-the-badge&logo=youtube&logoColor=white"></a>
-<a href="https://instagram.com/_rajnish_mishra____"><img title="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white"></a>
-<a href="https://t.me/BWANDARLOK"><img title="Support" src="https://img.shields.io/badge/Support-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+### 💻 Local Setup
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+```bash
+git clone https://github.com/CertifiedCoders/STRING-GENRATOR.git
+cd STRING-GENRATOR
+cp sample.env .env  # and edit values inside
 
+pip install -r requirements.txt
+python main.py
+```
 
+---
 
+### 🐿 Docker (Fastest Way)
+
+```bash
+docker build -t sessionbuilder .
+docker run --env-file .env sessionbuilder
+```
+
+---
+
+### ☁️ Railway / Heroku (Cloud Platforms)
+
+```bash
+railway init
+railway up
+```
+
+Or click the deploy buttons above. Make sure you set:
+
+```env
+API_ID=your_api_id
+API_HASH=your_api_hash
+BOT_TOKEN=your_bot_token
+OWNER_ID=your_telegram_user_id
+```
+
+---
+
+## 🧹 Folder Structure
+
+| Path               | Description                            |
+| ------------------ | -------------------------------------- |
+| `main.py`          | Bot entry point                        |
+| `StringGen/`       | Core handlers, modules & plugin logic  |
+| └ `generate.py`    | Session generation logic               |
+| └ `callbacks.py`   | Callback button handling               |
+| └ `admin.py`       | Admin-only stats, broadcast, user list |
+| └ `save_user.py`   | Saves user join info to MongoDB        |
+| └ `database.py`    | Mongo client config                    |
+| `utils.py`         | Async question-response logic          |
+| `sample.env`       | Env variable example file              |
+| `Dockerfile`       | Docker-ready container spec            |
+| `Procfile`         | Needed for Railway/Heroku dyno startup |
+| `requirements.txt` | Required Python dependencies           |
+
+---
+
+## 🧠 Credits & Contact
+
+<p align="center">
+  <a href="https://t.me/CertifiedCoders"><img src="https://img.shields.io/badge/Support%20Group-Join-orange?style=for-the-badge&logo=telegram" /></a>
+  <a href="https://t.me/CertifiedCodes"><img src="https://img.shields.io/badge/Channel-Updates-purple?style=for-the-badge&logo=telegram" /></a>
+  <a href="https://t.me/CertifiedCoder"><img src="https://img.shields.io/badge/Owner-Message-red?style=for-the-badge&logo=telegram" /></a>
+  <a href="https://youtube.com/@rajnisha3"><img src="https://img.shields.io/badge/Youtube-Subscribe-red?style=for-the-badge&logo=youtube" /></a>
+  <a href="https://instagram.com/rajnishthegreat"><img src="https://img.shields.io/badge/Instagram-Follow-pink?style=for-the-badge&logo=instagram" /></a>
+  <a href="mailto:rajnishmishraaa1@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-blue?style=for-the-badge&logo=gmail" /></a>
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+</p>
+
+<p align="center">
+  <strong>🧠 Built with vision by Certified Coders — enhancing your Telegram experience.</strong>
+</p>
