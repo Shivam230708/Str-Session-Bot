@@ -9,7 +9,6 @@ from telethon import TelegramClient
 from telethon.sessions import StringSession
 from StringGen.utils import ask
 
-# ─────────── Error mappings
 from pyrogram.errors import (
     ApiIdInvalid, PhoneNumberInvalid, PhoneCodeInvalid, PhoneCodeExpired,
     SessionPasswordNeeded, PasswordHashInvalid,
@@ -42,7 +41,6 @@ BUTTONS_QUES = [
 ]
 GEN_BUTTON = [[InlineKeyboardButton("ɢᴇɴᴇʀᴀᴛᴇ ꜱᴇꜱꜱɪᴏɴ 𖤍", callback_data="generate")]]
 
-# ─────────── ask() with cancel/restart logic
 async def ask_or_cancel(bot: Client, uid: int, prompt: str, *, timeout: int | None = None) -> str | None:
     try:
         m = await ask(bot, uid, prompt, timeout=timeout)
@@ -79,13 +77,12 @@ def readable_error(exc: Exception) -> str:
     for group, txt in mapping.items():
         if isinstance(exc, group):
             return txt
-    return f"ᴜɴᴋɴᴏᴡɴ ᴇʀʀᴏʀ: `{exc}`"
+    return f"ᴜɴᴋɴᴏᴡɴ ᴇʀʀᴏʀ: {str(exc).replace('`', '')}"
 
 @Client.on_message(filters.private & filters.command(["generate", "gen", "string", "str"]))
 async def cmd_generate(_, m: Message):
     await m.reply(ASK_QUES, reply_markup=InlineKeyboardMarkup(BUTTONS_QUES))
 
-# ─────────── Core session logic
 async def generate_session(
     bot: Client,
     msg: Message,
@@ -128,7 +125,9 @@ async def generate_session(
     )
     try:
         token_or_phone = await ask_or_cancel(bot, uid, prompt)
-        if token_or_phone is None: return
+        if token_or_phone is None or not token_or_phone.strip() or token_or_phone.strip() in [".", "-", "_"]:
+            return await msg.reply("» ɪɴᴠᴀʟɪᴅ ᴘʜᴏɴᴇ ɴᴜᴍʙᴇʀ/ᴛᴏᴋᴇɴ.", reply_markup=InlineKeyboardMarkup(GEN_BUTTON))
+        token_or_phone = token_or_phone.strip()
     except TimeoutError as te:
         return await msg.reply(f"» {te}", reply_markup=InlineKeyboardMarkup(GEN_BUTTON))
 
