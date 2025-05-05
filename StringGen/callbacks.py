@@ -15,7 +15,7 @@ ERROR_MESSAGE = (
     "❌ ᴇʀʀᴏʀ ᴅᴜʀɪɴɢ ꜱᴇꜱꜱɪᴏɴ ɢᴇɴᴇʀᴀᴛɪᴏɴ:\n\n"
     "• ᴘʟᴇᴀꜱᴇ ᴍᴀᴋᴇ ꜱᴜʀᴇ ʏᴏᴜ ᴇɴᴛᴇʀ ᴄᴏʀʀᴇᴄᴛ ᴅᴀᴛᴀ.\n"
     "• ʀᴇ-ᴄʜᴇᴄᴋ ᴀᴘɪ ɪᴅ / ʜᴀꜱʜ / ᴘʜᴏɴᴇ / ᴛᴏᴋᴇɴ.\n"
-    "• ɪꜰ ᴛʜᴇ ɪꜱꜱᴜᴇ ᴘᴇʀꜱɪꜱᴛꜱ, ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇ ᴇʀʀᴏʀ ᴛᴏ [ᴄᴇʀᴛɪꜰɪᴇᴅ ᴄᴏᴅᴇʀ ✔️](https://t.me/CertifiedCoder)"
+    "• ɪꜰ ᴛʜᴇ ɪꜱꜱᴜᴇ ᴘᴇʀꜱɪꜱᴛꜱ, ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇ ᴇʀʀᴏʀ ᴛᴏ [Developer](https://t.me/Unknown_RK01)"
 )
 
 CALLBACK_PATTERN = r"^(generate|pyrogram_v1|pyrogram_v2|pyrogram_bot|telethon|telethon_bot)$"
